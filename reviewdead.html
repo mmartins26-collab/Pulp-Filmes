@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review - PulpFilm</title>
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://googleapis.com" rel="stylesheet">
+    <link rel="stylesheet" href="https://googleapis.com" />
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">
+                    <span class="fonte-especial">PulpFilm</span>
+                </h1>
+                <nav class="nav">
+                    <a href="reviews.html" class="nav-link active">REVIEWS</a>
+                    <a href="noticias.html" target="_self" class="nav-link">NOTÍCIAS</a>
+                    <a href="camisetas.html" class="nav-link">PRODUTOS</a>
+                </nav>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" id="campo-busca" class="fonte-três" placeholder="BUSCAR...">
+                        <button class="search-btn" id="botao-lupa">
+                            <span class="material-symbols-outlined">search</span>
+                        </button>
+                    </div>
+
+                    <a href="carrinho.html" style="text-decoration: none;">
+                        <button class="search-btn">
+                            <span class="material-symbols-outlined">shopping_cart</span>
+                        </button>
+                    </a>
+                    <a href="login.html" style="text-decoration: none;">
+                        <button class="login-btn">CRIAR UMA CONTA</button>
+                    </a>
+                    <a href="login.html" style="text-decoration: none;">
+                        <button class="login-btn">ENTRAR</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="pulp-backdrop-wrapper">
+        <div class="pulp-backdrop-img" style="background-image: url('imagens/Dead3\ \(2\).jpeg');"></div>
+        <div class="pulp-backdrop-overlay-top"></div>
+        <div class="pulp-backdrop-overlay-bottom"></div>
+        <div class="pulp-backdrop-overlay-sides"></div>
+    </div>
+
+    <main class="pulp-movie-main">
+        <div class="pulp-movie-content-container">
+            
+            <div class="pulp-col-poster">
+                <img src="imagens/dead1.jpeg" alt="Pôster Toy Story 5">
+            </div>
+
+            <div class="pulp-col-info">
+                <h2 class="pulp-movie-title fonte-três">Dead Poets Society</h2>
+                <div class="pulp-movie-meta fonte">
+                    <span class="pulp-year-badge">1989</span> 
+                    <span>Dirigido por <a href="#" class="pulp-director-link">Peter Weir</a></span>
+                </div>
+                
+                <hr class="pulp-divider">
+                
+                <h4 class="pulp-tagline fonte-três">O jogo começou.</h4>
+                <p class="pulp-synopsis">
+                O novo professor de Inglês John Keating é introduzido a uma escola preparatória de meninos que é conhecida por suas antigas tradições e alto padrão. Ele usa métodos pouco ortodoxos para atingir seus alunos, que enfrentam enormes pressões de seus pais e da escola. Com a ajuda de Keating, os alunos Neil Perry, Todd Anderson e outros aprendem como não serem tão tímidos, seguir seus sonhos e aproveitar cada dia.
+            </div>
+            <div class="pulp-col-sidebar">
+                <div class="pulp-card-actions">
+                    <a href="login.html" class="pulp-btn-primary">
+                        <span class="material-symbols-outlined">rate_review</span>
+                        DEIXAR REVIEW
+                    </a>
+                    <button class="pulp-btn-secondary">
+                        <span class="material-symbols-outlined">share</span>
+                        COMPARTILHAR
+                    </button>
+                </div>
+
+                <div class="pulp-chart-box">
+                    <div class="pulp-chart-header">
+                        <span class="pulp-chart-title fonte">AVALIAÇÕES</span>
+                        <span class="pulp-chart-count font-three">611 Fãs</span>
+                    </div>
+                    
+                    <div class="pulp-chart-row">
+                        <div class="pulp-histogram">
+                            <div class="pulp-histogram-bar" style="height: 12%;"></div>
+                            <div class="pulp-histogram-bar" style="height: 20%;"></div>
+                            <div class="pulp-histogram-bar" style="height: 40%;"></div>
+                            <div class="pulp-histogram-bar" style="height: 60%;"></div>
+                            <div class="pulp-histogram-bar" style="height: 90%;"></div>
+                            <div class="pulp-histogram-bar" style="height: 100%;"></div>
+                            <div class="pulp-histogram-bar" style="height: 75%;"></div>
+                            <div class="pulp-histogram-bar" style="height: 45%;"></div>
+                            <div class="pulp-histogram-bar" style="height: 25%;"></div>
+                            <div class="pulp-histogram-bar" style="height: 8%;"></div>
+                        </div>
+                        
+                        <div class="pulp-score-display">
+                            <div class="pulp-rating-num font-three">3.7</div>
+                            <div class="pulp-rating-stars">
+                                <span class="material-symbols-outlined pulp-star">star</span>
+                                <span class="material-symbols-outlined pulp-star">star</span>
+                                <span class="material-symbols-outlined pulp-star">star</span>
+                                <span class="material-symbols-outlined pulp-star">star_half</span>
+                                <span class="material-symbols-outlined pulp-star">star_rate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>

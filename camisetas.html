@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>produtos | PulpFilm</title>
+    <link rel="stylesheet" href="produtos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">
+                    <span class="fonte-especial">PulpFilm</span>
+                </h1>
+                <nav class="nav">
+                    <a href="reviews.html" target="_self" class="nav-link">REVIEWS</a>
+                    <a href="noticias.html" target="_self" class="nav-link">NOTÍCIAS</a>
+                    <a href="camisetas.html" class="nav-link active">PRODUTOS</a>
+                </nav>
+               <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" id="campo-busca" class="fonte-três" placeholder="BUSCAR...">
+                        <button class="search-btn" id="botao-lupa">
+                            <span class="material-symbols-outlined">search</span>
+                        </button>
+                    </div>
+                    <a href="carrinho.html" style="text-decoration: none;">
+                        <button class="search-btn"><span class="material-symbols-outlined">shopping_cart</span></button>
+                    </a>
+                    <a href="login.html" style="text-decoration: none;">
+                        <button class="login-btn">CRIAR UMA CONTA</button>
+                    </a>
+                    <a href="login.html" style="text-decoration: none;">
+                        <button class="login-btn">ENTRAR</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   <main class="main">
+     <div class="container">
+        <div class="filters">
+           <div class="filter-tabs">
+                <a href="camisetas.html" class="filter-tab active" style="text-decoration: none;">CAMISETAS</a>
+                <a href="bonecos.html" class="filter-tab" style="text-decoration: none;">BONECOS</a>
+                <a href="poster.html" class="filter-tab" style="text-decoration: none;">POSTERS E QUADROS</a>
+            </div>
+        </div>
+
+        <div class="reviews-grid">
+            
+            <article class="review-card">
+                <div class="review-image">
+                    <img src="imagens/sid.png" alt="Camiseta" loading="lazy">
+                </div>
+                <div class="review-content">
+                    <div class="review-meta">
+                        <span class="review-type">SÉRIES</span>
+                    </div>
+                    <h2 class="review-title">Camiseta Maga Dog - Sid Skins</h2>
+                    <p class="review-excerpt">R$ 150,00</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="1">
+                        <input type="hidden" name="nome" value="Camiseta Maga Dog - Sid Skins">
+                        <input type="hidden" name="preco" value="150.00">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+
+            <article class="review-card">
+                <div class="review-image">
+                    <img src="imagens/nana.png" alt="Camiseta" loading="lazy">
+                </div>
+                <div class="review-content">
+                    <div class="review-meta">
+                        <span class="review-type">SÉRIES</span>
+                    </div>
+                    <h2 class="review-title">Moletom Nana Branco - Nana Osaki</h2>
+                    <p class="review-excerpt">R$ 200,00</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="2">
+                        <input type="hidden" name="nome" value="Moletom Nana Branco - Nana Osaki">
+                        <input type="hidden" name="preco" value="200.00">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+
+        
+            <article class="review-card">
+                <div class="review-image">
+                    <img src="imagens/stand.png" alt="Camiseta" loading="lazy">
+                </div>
+                <div class="review-content">
+                    <div class="review-meta">
+                        <span class="review-type">FILMES</span>
+                    </div>
+                    <h2 class="review-title">Camiseta Stand By me Branca</h2>
+                    <p class="review-excerpt">R$ 120,00</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="3">
+                        <input type="hidden" name="nome" value="Camiseta Stand By me">
+                        <input type="hidden" name="preco" value="120.00">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+
+            <article class="review-card">
+                <div class="review-image">
+                    <img src="imagens/boy.png" alt="Camiseta" loading="lazy">
+                </div>
+                <div class="review-content">
+                    <div class="review-meta">
+                        <span class="review-type">SÉRIES</span>
+                    </div>
+                    <h2 class="review-title">Camiseta Evangelion - Shinji Ikari</h2>
+                    <p class="review-excerpt">R$ 180,90</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="4">
+                        <input type="hidden" name="nome" value="Camiseta Evangelion - Shinji Ikari">
+                        <input type="hidden" name="preco" value="180.90">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+           
+            <article class="review-card">
+                <div class="review-image">
+                    <img src="imagens/pulp2.png" alt="Camiseta" loading="lazy">
+                </div>
+                <div class="review-content">
+                    <div class="review-meta">
+                        <span class="review-type">FILMES</span>
+                    </div>
+                    <h2 class="review-title">Camiseta Pulp Fiction Amarela</h2>
+                    <p class="review-excerpt">R$ 190,89</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="5">
+                        <input type="hidden" name="nome" value="Camiseta Pulp Fiction">
+                        <input type="hidden" name="preco" value="190.89">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+
+    
+            <article class="review-card">
+                <div class="review-image">
+                    <img src="imagens/madoka.png" alt="Silent" loading="lazy">
+                </div>
+                <div class="review-content">
+                    <div class="review-meta">
+                        <span class="review-type">JOGOS</span>
+                    </div>
+                    <h2 class="review-title">Puella Magi Madoka Magica - Homura Akemi</h2>
+                    <p class="review-excerpt">R$ 700,00</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="6">
+                        <input type="hidden" name="nome" value="Puella Magi Madoka Magica - Homura Akemi">
+                        <input type="hidden" name="preco" value="700.00">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+
+            <!-- Camisetas Ocultas -->
+            <article class="review-card produto-oculto">
+                <div class="review-image">
+                    <img src="imagens/gummo.png" alt="Novo" loading="lazy">
+                </div>
+                <div class="review-content">
+                    <div class="review-meta">
+                        <span class="review-type">Filmes</span>
+                    </div>
+                    <h2 class="review-title">Camiseta Gummo - Bunny Boy</h2>
+                    <p class="review-excerpt">R$ 160,00</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="7">
+                        <input type="hidden" name="nome" value="Camiseta Gummo - Bunny Boy">
+                        <input type="hidden" name="preco" value="160.00">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+
+            <article class="review-card produto-oculto">
+                <div class="review-image">
+                    <img src="imagens/blacklagoon.png" alt="Novo" loading="lazy">
+                </div>
+                <div class="review-content">
+                    <div class="review-meta">
+                        <span class="review-type">SÉRIES</span>
+                    </div>
+                    <h2 class="review-title">Jaqueta Jean Black Lagoon - Revy</h2>
+                    <p class="review-excerpt">R$ 578,90</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="8">
+                        <input type="hidden" name="nome" value="Jaqueta Jean Black Lagoon - Revy">
+                        <input type="hidden" name="preco" value="578.90">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+
+            <article class="review-card produto-oculto">
+                <div class="review-image">
+                    <img src="imagens/things.png" alt="Novo" loading="lazy">
+                </div>
+                <div class="review-content">
+                    <div class="review-meta">
+                        <span class="review-type">Filmes</span>
+                    </div>
+                    <h2 class="review-title">Camiseta 10 Coisas Que Eu Odeio Em Você</h2>
+                    <p class="review-excerpt">R$ 160,00</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="9">
+                        <input type="hidden" name="nome" value="Camiseta 10 Coisas Que Eu Odeio Em Você">
+                        <input type="hidden" name="preco" value="160.00">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+        </div>
+     </div>
+     
+     <div class="container-btn">
+        <button id="verMaisBtn" class="login-btn">VER MAIS PRODUTOS</button>
+     </div>
+   </main>
+
+   <script src="carrinho.js"></script>
+     <script src="review.js"></script>
+</body>
+</html>

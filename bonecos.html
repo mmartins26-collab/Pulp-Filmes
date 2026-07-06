@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>produtos | PulpFilm</title>
+    <link rel="stylesheet" href="produtos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">
+                    <span class="fonte-especial">PulpFilm</span>
+                </h1>
+                <nav class="nav">
+                    <a href="reviews.html" target="_self" class="nav-link">REVIEWS</a>
+                    <a href="noticias.html" target="_self" class="nav-link">NOTÍCIAS</a>
+                    <a href="camisetas.html" class="nav-link active">PRODUTOS</a>
+                </nav>
+                 <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" id="campo-busca" class="fonte-três" placeholder="BUSCAR...">
+                        <button class="search-btn" id="botao-lupa">
+                            <span class="material-symbols-outlined">search</span>
+                        </button>
+                    </div>
+                    <a href="carrinho.html" style="text-decoration: none;">
+                        <button class="search-btn"><span class="material-symbols-outlined">shopping_cart</span></button>
+                    </a>
+                    <a href="login.html" style="text-decoration: none;">
+                        <button class="login-btn">CRIAR UMA CONTA</button>
+                    </a>
+                    <a href="login.html" style="text-decoration: none;">
+                        <button class="login-btn">ENTRAR</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+   <main class="main">
+     <div class="container">
+        <div class="filters">
+           <div class="filter-tabs">
+                <a href="camisetas.html" class="filter-tab" style="text-decoration: none;">CAMISETAS</a>
+                <a href="bonecos.html" class="filter-tab active" style="text-decoration: none;">BONECOS</a>
+                <a href="poster.html" class="filter-tab" style="text-decoration: none;">POSTERS E QUADROS</a>
+            </div>
+        </div>
+
+        <div class="reviews-grid">
+            <article class="review-card">
+                <div class="review-image">
+                    <img src="imagens/michael.png" alt="Skins" loading="lazy">
+                </div>
+                <div class="review-content">
+                    <div class="review-meta">
+                        <span class="review-type">Filmes</span>
+                    </div>
+                    <h2 class="review-title">Halloween - Michael Myers</h2>
+                    <p class="review-excerpt">R$ 280,00</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="7">
+                        <input type="hidden" name="nome" value="Halloween - Michael Myers">
+                        <input type="hidden" name="preco" value="280.00">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+
+       
+            <article class="review-card">
+                <div class="review-image">
+                    <img src="imagens/tlou.png" alt="The Last Of Us" loading="lazy">
+                </div>
+                <div class="review-content">
+                    <div class="review-meta">
+                        <span class="review-type">SÉRIES / JOGOS</span>
+                    </div>
+                    <h2 class="review-title">The Last Of US II - Ellie Williams</h2>
+                    <p class="review-excerpt">R$ 1500,00</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="8">
+                        <input type="hidden" name="nome" value="The Last Of US II - Ellie Williams">
+                        <input type="hidden" name="preco" value="1500.00">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+
+            <article class="review-card">
+                <div class="review-image">
+                    <img src="imagens/crow.png" alt="The Crow" loading="lazy">
+                </div>
+                <div class="review-content">
+                    <div class="review-meta">
+                        <span class="review-type">FILMES</span>
+                    </div>
+                    <h2 class="review-title">The Crow - Eric Draven           1994</h2>
+                    <p class="review-excerpt">R$ 350,00</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="9">
+                        <input type="hidden" name="nome" value="The Crow - Eric Draven">
+                        <input type="hidden" name="preco" value="350.00">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+
+
+            <article class="review-card">
+                <div class="review-image">
+                    <img src="imagens/kaneki.png" alt="Kaneki" loading="lazy">
+                </div>
+                <div class="review-content">
+                    <div class="review-meta">
+                        <span class="review-type">FILMES / SÉRIES</span>
+                    </div>
+                    <h2 class="review-title">Kotobukiya Estátua Artfx J Tokyo Ghoul Ken Kaneki</h2>
+                    <p class="review-excerpt">R$ 1799,90</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="10">
+                        <input type="hidden" name="nome" value="Tokyo Ghoul - Kaneki Ken">
+                        <input type="hidden" name="preco" value="1799.90">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+      
+            <article class="review-card">
+                <div class="review-image">
+                    <img src="imagens/terminator.png" alt="Exterminador" loading="lazy">
+                </div>
+                <div class="review-content">
+                    <div class="review-meta">
+                        <span class="review-type">FILMES</span>
+                    </div>
+                    <h2 class="review-title">Exterminador Do Futuro II - Terminator</h2>
+                    <p class="review-excerpt">R$ 2780,89</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="11">
+                        <input type="hidden" name="nome" value="Exterminador Do Futuro II - Terminator">
+                        <input type="hidden" name="preco" value="2780.89">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+
+            <article class="review-card">
+                <div class="review-image">
+                    <img src="imagens/silent.png" alt="Silent" loading="lazy">
+                </div>
+                <div class="review-content">
+                    <div class="review-meta">
+                        <span class="review-type">JOGOS</span>
+                    </div>
+                    <h2 class="review-title">Silent Hill III - Cherry Blossom</h2>
+                    <p class="review-excerpt">R$ 1599,00</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="12">
+                        <input type="hidden" name="nome" value="Silent Hill III - Cherry Blossom">
+                        <input type="hidden" name="preco" value="1599.00">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+
+            <article class="review-card produto-oculto">
+                <div class="review-image"><img src="imagens/minious.png" alt="Minios"></div>
+                <div class="review-content">
+                    <div class="review-meta"><span class="review-type">filmes</span></div>
+                    <h2 class="review-title">Funko Pop! Filme Minions King Bob Boneco Colecionável</h2>
+                    <p class="review-excerpt">R$ 568,00</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="13">
+                        <input type="hidden" name="nome" value="Funko Pop! Filme Minions King Bob">
+                        <input type="hidden" name="preco" value="568.00">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+
+            <article class="review-card produto-oculto">
+                <div class="review-image"><img src="imagens/haikyuu.png" alt="Novo"></div>
+                <div class="review-content">
+                    <div class="review-meta"><span class="review-type">SÉRIES</span></div>
+                    <h2 class="review-title">Haikyuu! Action Figure Hinata Shoyo e Kageyama Tobio</h2>
+                    <p class="review-excerpt">R$ 1599,00</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="14">
+                        <input type="hidden" name="nome" value="Haikyuu! Action Figure Hinata Shoyo e Kageyama Tobio">
+                        <input type="hidden" name="preco" value="1599.00">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+
+            <article class="review-card produto-oculto">
+                <div class="review-image"><img src="imagens/tele.png" alt="teletubbies"></div>
+                <div class="review-content">
+                    <div class="review-meta"><span class="review-type">SÉRIES</span></div>
+                    <h2 class="review-title">Funko Pop! Television Teletubbies Laa-Laa Boneco Colecionável</h2>
+                    <p class="review-excerpt">R$ 799,90</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="15">
+                        <input type="hidden" name="nome" value="Funko Pop! Television Teletubbies Laa-Laa">
+                        <input type="hidden" name="preco" value="799.90">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+
+            <article class="review-card produto-oculto">
+                <div class="review-image"><img src="imagens/mikuu.png" alt="Novo"></div>
+                <div class="review-content">
+                    <div class="review-meta"><span class="review-type">JOGOS</span></div>
+                    <h2 class="review-title">Hatsune Miku - Action Figure Limited Edition</h2>
+                    <p class="review-excerpt">R$ 12.500,00</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="16">
+                        <input type="hidden" name="nome" value="Hatsune Miku - Action Figure Limited Edition">
+                        <input type="hidden" name="preco" value="12500.00">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+
+            <article class="review-card produto-oculto">
+                <div class="review-image"><img src="imagens/toy.png" alt="Toy Story"></div>
+                <div class="review-content">
+                    <div class="review-meta"><span class="review-type">SÉRIES</span></div>
+                    <h2 class="review-title">Bookends do Slinky Dog de Toy Story</h2>
+                    <p class="review-excerpt">R$ 1.043,75</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="17">
+                        <input type="hidden" name="nome" value="Bookends do Slinky Dog de Toy Story">
+                        <input type="hidden" name="preco" value="1043.75">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+
+            <article class="review-card produto-oculto">
+                <div class="review-image"><img src="imagens/coluu.png" alt="Novo"></div>
+                <div class="review-content">
+                    <div class="review-meta"><span class="review-type">JOGOS</span></div>
+                    <h2 class="review-title">Genshin Impact - Action Figure Columbina</h2>
+                    <p class="review-excerpt">R$ 999,00</p>
+                    <form action="/carrinho/adicionar" method="POST">
+                        <input type="hidden" name="id" value="18">
+                        <input type="hidden" name="nome" value="Genshin Impact - Action Figure Columbina">
+                        <input type="hidden" name="preco" value="999.00">
+                        <button type="submit" class="login-btn" style="margin-top: 10px; width: 100%;">ADICIONAR</button>
+                    </form>
+                </div>
+            </article>
+        </div>
+     </div>
+  
+     <div class="container-btn">
+        <button id="verMaisBtn" class="login-btn">VER MAIS PRODUTOS</button>
+     </div>
+   </main>
+
+   <script src="carrinho.js"></script>
+     <script src="review.js"></script>
+</body>
+</html>

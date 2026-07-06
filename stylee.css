@@ -1,0 +1,293 @@
+/* ==========================================================================
+   FOLHA DE ESTILO ISOLADA PARA A PÁGINA DO FILME (.PULP-)
+   ========================================================================== */
+
+/* Ajuste de profundidade do corpo da página */
+body {
+    background-color: #000000 !important;
+    position: relative;
+}
+
+/* Fixando o cabeçalho original no topo sobre o fundo esfumado */
+.header {
+    position: relative;
+    z-index: 100;
+    background-color: transparent !important;
+}
+
+/* CONTAINER DO BACKDROP (IMAGEM PRINCIPAL ESFUMADA) */
+.pulp-backdrop-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 580px;
+    z-index: 1;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.pulp-backdrop-img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center top;
+    opacity: 0.3; /* Transparência da imagem principal */
+}
+
+/* Máscaras de Gradiente para criar o efeito esfumado nas bordas */
+.pulp-backdrop-overlay-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 160px;
+    background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.pulp-backdrop-overlay-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(to top, #000000 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.pulp-backdrop-overlay-sides {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #000000 0%, rgba(0, 0, 0, 0) 15%, rgba(0, 0, 0, 0) 85%, #000000 100%);
+    pointer-events: none;
+}
+
+/* LAYOUT PRINCIPAL EM COLUNAS ISOLADAS */
+.pulp-movie-main {
+    position: relative;
+    z-index: 10;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+/* Container de largura máxima centralizado alinhado com o padrão do seu site */
+.pulp-movie-content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Coluna 1: Pôster */
+.pulp-col-poster {
+    flex: 0 0 230px;
+}
+
+.pulp-col-poster img {
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.9);
+}
+
+/* Coluna 2: Informações Centrais */
+.pulp-col-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.pulp-movie-title {
+    color: #ffffff !important;
+    font-size: 36px !important;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.pulp-movie-meta {
+    font-size: 14px;
+    color: #888888;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.pulp-year-badge {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 3px 10px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.pulp-director-link {
+    color: #ffffff;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.pulp-divider {
+    border: 0;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.1);
+    margin: 20px 0;
+}
+
+.pulp-tagline {
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #888888;
+    margin-bottom: 12px;
+}
+
+.pulp-synopsis {
+    color: #cccccc;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+/* Coluna 3: Painel Lateral (Sidebar) */
+.pulp-col-sidebar {
+    flex: 0 0 280px;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.pulp-card-actions {
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Botões Isolados Corrigidos */
+.pulp-btn-primary, .pulp-btn-secondary {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 12px !important;
+    border-radius: 4px !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    letter-spacing: 1px;
+    text-decoration: none !important;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.pulp-btn-primary {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+    border: none !important;
+}
+
+.pulp-btn-primary:hover {
+    background-color: #e5e5e5 !important;
+}
+
+.pulp-btn-secondary {
+    background-color: transparent !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+.pulp-btn-secondary:hover {
+    background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* Bloco do Gráfico */
+.pulp-chart-box {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    padding-top: 20px;
+}
+
+.pulp-chart-header {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    margin-bottom: 18px;
+}
+
+.pulp-chart-title {
+    color: #666666;
+    font-weight: 600;
+}
+
+.pulp-chart-count {
+    color: #888888;
+}
+
+.pulp-chart-row {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* Gráfico de Barras Vertical */
+.pulp-histogram {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    height: 45px;
+    flex-grow: 1;
+    margin-right: 20px;
+}
+
+.pulp-histogram-bar {
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 100%;
+    border-radius: 2px 2px 0 0;
+}
+
+.pulp-histogram-bar:hover {
+    background-color: #ffffff;
+}
+
+/* Exibição da Pontuação */
+.pulp-score-display {
+    text-align: right;
+    min-width: 65px;
+}
+
+.pulp-rating-num {
+    color: #ffffff;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.pulp-rating-stars {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1px;
+    margin-top: 6px;
+}
+
+.pulp-star {
+    font-size: 11px !important;
+    color: #ffffff;
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+}
+
+/* Responsividade */
+@media (max-width: 850px) {
+    .pulp-movie-content-container {
+        flex-direction: column;
+    }
+    .pulp-col-poster {
+        margin: 0 auto;
+    }
+    .pulp-backdrop-wrapper {
+        display: none;
+    }
+}

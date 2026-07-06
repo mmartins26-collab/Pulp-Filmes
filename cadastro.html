@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulpFilm</title>
+    <link rel="stylesheet" href="https://googleapis.com" />
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">
+                    <span class="fonte-especial">PulpFilm</span>
+                </h1>
+                <nav class="nav">
+                    <a href="reviews.html" class="nav-link active">REVIEWS</a>
+                    <a href="noticias.html" target="_self" class="nav-link">NOTÍCIAS</a>
+                    <a href="camisetas.html" class="nav-link">PRODUTOS</a>
+                </nav>
+                <div class="header-actions">
+                    <div class="search-container">
+                        <input type="text" id="campo-busca" class="fonte-três" placeholder="BUSCAR...">
+                        <button class="search-btn" id="botao-lupa">
+                            <span class="material-symbols-outlined">search</span>
+                        </button>
+                    </div>
+
+                    <a href="carrinho.html" style="text-decoration: none;">
+                        <button class="search-btn">
+                            <span class="material-symbols-outlined">shopping_cart</span>
+                        </button>
+                    </a>
+                    <a href="login.html" style="text-decoration: none;">
+                        <button class="login-btn">CRIAR UMA CONTA</button>
+                    </a>
+                    <a href="login.html" style="text-decoration: none;">
+                        <button class="login-btn">ENTRAR</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2 class="hero-title fonte-três">Reviews sem filtro, onde o cinema ganha voz.</h2>
+                <p class="hero-subtitle fonte">PARA OS AMANTES DA CINEMATOGRAFIA</p>
+                <div class="hero-stats">
+                    <span>2.847 reviews</span>
+                    <span>1.204 notícias</span>
+                    <span>892 curiosidades</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="main">
+        <div class="container">
+            <section class="movies-carousel-section">
+                <h3 class="section-title">Filmes aclamados pelo publico</h3>
+                <hr class="linha-separadora">
+                <div class="movies-carousel">
+                    <div class="movies-list">
+                        <div class="movie-poster">
+                            <img src="imagens/Amadeus.jfif" alt="Amandeus" loading="lazy">
+                            <div class="movie-overlay">
+                                <span class="movie-title">Amadeus</span>
+                                <span class="movie-rating">9.1</span>
+                            </div>
+                        </div>
+                        <div class="movie-poster">
+                            <img src="imagens/evangelion.jfif" alt="evangelion" loading="lazy">
+                            <div class="movie-overlay">
+                                <span class="movie-title">evangelion</span>
+                                <span class="movie-rating">9.0</span>
+                            </div>
+                        </div>
+                        <div class="movie-poster">
+                            <img src="imagens/the vir.jfif" alt="the virgin suicides" loading="lazy">
+                            <div class="movie-overlay">
+                                <span class="movie-title">the virgin suicides</span>
+                                <span class="movie-rating">7.8</span>
+                            </div>
+                        </div>
+                        <div class="movie-poster">
+                            <img src="imagens/kid.jfif" alt="kid" loading="lazy">
+                            <div class="movie-overlay">
+                                <span class="movie-title">kid</span>
+                                <span class="movie-rating">8.7</span>
+                            </div>
+                        </div>
+                        <div class="movie-poster">
+                            <img src="imagens/L Lawliet        _Death Note.jfif" alt="Death Note" loading="lazy">
+                            <div class="movie-overlay">
+                                <span class="movie-title">Death Note</span>
+                                <span class="movie-rating">10</span>
+                            </div>
+                        </div>
+                        <div class="movie-poster">
+                            <img src="imagens/LaBanba.jfif" alt="La bamba" loading="lazy">
+                            <div class="movie-overlay">
+                                <span class="movie-title">La Bamba</span>
+                                <span class="movie-rating">8.7</span>
+                            </div>
+                        </div>
+                        <div class="movie-poster">
+                            <img src="imagens/monster1.jpeg" alt="Monster" loading="lazy">
+                            <div class="movie-overlay">
+                                <span class="movie-title">Monster</span>
+                                <span class="movie-rating">9.3</span>
+                            </div>
+                        </div>
+                        <div class="movie-poster">
+                            <img src="imagens/punk1.jpeg" alt="SLC Punk" loading="lazy">
+                            <div class="movie-overlay">
+                                <span class="movie-title">SLC Punk</span>
+                                <span class="movie-rating">8.4</span>
+                            </div>
+                        </div>
+                        <div class="movie-poster">
+                            <img src="imagens/lain.jpeg" alt="Lain" loading="lazy">
+                            <div class="movie-overlay">
+                                <span class="movie-title">Serial Experiments Lain</span>
+                                <span class="movie-rating">9.1</span>
+                            </div>
+                        </div>
+                        <div class="movie-poster">
+                            <img src="imagens/pink1.jpeg" alt="Pretty In Pink" loading="lazy">
+                            <div class="movie-overlay">
+                                <span class="movie-title">Pretty In Pink</span>
+                                <span class="movie-rating">8.9</span>
+                            </div>
+                        </div>
+                        <div class="movie-poster">
+                            <img src="imagens/ergo.jpeg" alt="Ergo Proxy" loading="lazy">
+                            <div class="movie-overlay">
+                                <span class="movie-title">Ergo Proxy</span>
+                                <span class="movie-rating">8.9</span>
+                            </div>
+                        </div>
+                        <div class="movie-poster">
+                            <img src="imagens/hall.jpeg" alt="Halloween H20" loading="lazy">
+                            <div class="movie-overlay">
+                                <span class="movie-title">Halloween H20</span>
+                                <span class="movie-rating">7.5</span>
+                            </div>
+                        </div>
+                        <div class="movie-poster">
+                            <img src="imagens/totoro.jpeg" alt="Totoro" loading="lazy">
+                            <div class="movie-overlay">
+                                <span class="movie-title">Meu amigo Totoro</span>
+                                <span class="movie-rating">1.0</span>
+                            </div>
+                        </div>
+                        <div class="movie-poster">
+                            <img src="imagens/Ferris.jpeg" alt="Curtindo A Vida Adoidado" loading="lazy">
+                            <div class="movie-overlay">
+                                <span class="movie-title">Curtindo A Vida Adoidado</span>
+                                <span class="movie-rating">9.8</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="featured">
+                <h3 class="section-title">Review da semana</h3>
+                <hr class="linha-separadora">
+                <div class="review-card featured-review">
+                    <div class="review-header">
+                        <div class="review-poster">
+                            <img src="imagens/dead1.jpeg" alt="Poster">
+                        </div>
+                        <div class="review-info">
+                            <h4 class="review-title">Dead Poets Society</h4>
+                            <div class="review-rating">
+                                <span class="stars">★★★★</span>
+                                <span class="score">7,9/10</span>
+                            </div>
+                            <p class="review-author">Marcella Oliveira• 2 dias atrás</p>
+                        </div>
+                    </div>
+                    <p class="review-excerpt">
+                        Um marco do cinema contemporâneo. Nolan entrega sua obra-prima mais ambiciosa, 
+                        misturando ciência, moralidade e espetáculo visual de tirar o fôlego...
+                    </p>
+                    <a href="#" class="read-more">Ler review completo →</a>
+                </div>
+            </section>
+
+            <hr class="linha-separadora">
+
+            <div class="content-grid">
+                <section class="content-section">
+                    <h3 class="section-title">Novas Reviews</h3>
+                    <div class="cards-grid">
+                        <article class="card">
+                            <div class="card-poster">
+                                <img src="imagens/Stand By Me.jfif" alt="Filme">
+                                <span class="card-rating">9.5</span>
+                            </div>
+                            <h4 class="card-title">Standy by me</h4>
+                            <p class="card-author">Nicoli Cesario</p>
+                            <p class="card-excerpt">"Conta Comigo" (Stand by Me, 1986), dirigido por Rob Reiner e baseado no conto de Stephen King, é um clássico de amadurecimento sobre quatro amigos. </p>
+                        </article>
+                        <article class="card">
+                            <div class="card-poster">
+                                <img src="imagens/Fallen_2.jpg" alt="Série">
+                                <span class="card-rating">9.1</span>
+                            </div>
+                            <h4 class="card-title">Fallen Angels</h4>
+                            <p class="card-author">Maria Eduarda</p>
+                            <p class="card-excerpt">"Fallen Angels" (Anjos Caídos),aclamado pelo seu estilo visual único em Hong Kong, apresentando histórias cruzadas em uma metrópole melancólica e neon.</p>
+                        </article>
+                        <article class="card">
+                            <div class="card-poster">
+                                <img src="imagens/Detroit.jpg" alt="Filme">
+                                <span class="card-rating">7.8</span>
+                            </div>
+                            <h4 class="card-title">DetroiRock City</h4>
+                            <p class="card-author">Nicoli Cesario</p>
+                            <p class="card-excerpt">Quatro adolescentes, um Chevy Vega e uma missão épica: chegar ao show do KISS em 1978. Entre pais conservadores e confusões em Detroit.</p>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="review.js"></script>
+</body>
+</html>
